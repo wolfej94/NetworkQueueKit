@@ -1,7 +1,4 @@
 # NetworkQueueKit
- Swift package for queuing network requests and processing this queue as a background task or when network reachability improves
-
-# NetworkQueueKit
 
 `NetworkQueueKit` is a Swift library providing a class for managing a queue of network requests, with support for asynchronous processing and background tasks. It also integrates with network reachability to handle requests when the network is available.
 
