@@ -47,6 +47,9 @@ public class NetworkQueueKit {
             $0?.requestStatus = Request.Status.pending
             $0?.method = urlRequest.httpMethod
         }
+        if NetworkReachabilityManager.shared.isNetworkAvailable {
+            try await processQueue()
+        }
     }
     
     /// Processes the queue of pending network requests asynchronously.
